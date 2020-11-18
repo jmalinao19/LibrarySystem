@@ -1,4 +1,4 @@
-package com.javatpoint;
+package com.libsystem;
 import java.sql.*;
 public class GetCon {
 private GetCon(){}

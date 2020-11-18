@@ -1,4 +1,4 @@
-package com.javatpoint;
+package com.libsystem;
 
 public interface DBIntializer {
 String DRIVER="oracle.jdbc.driver.OracleDriver";

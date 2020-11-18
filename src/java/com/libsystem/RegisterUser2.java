@@ -1,4 +1,4 @@
-package com.javatpoint;
+package com.libsystem;
 import java.sql.*;
 public class RegisterUser2 {
 static int status=0;

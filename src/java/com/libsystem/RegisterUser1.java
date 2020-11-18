@@ -1,15 +1,14 @@
-package com.javatpoint;
+package com.libsystem;
 import java.sql.*;
-public class RegisterUser {
+public class RegisterUser1 {
 static int status=0;
 //int accountno=1;
-public static int register(String username,String password,String repassword,double phone,String adderess,String syd){
-	//public static int register(String email,String password,String gender,String country,String name){
-
+public static int register1(String username,String password,String repassword,double phone,String adderess,String syd){
+	
 	Connection con=GetCon.getCon();
 	PreparedStatement ps;
 	try {
-		ps = con.prepareStatement("Insert into NEWMEMBER values(?,?,?,?,?,?,?)");
+		ps = con.prepareStatement("Insert into NEWSTAFFMEMBER values(?,?,?,?,?,?,?)");
 		int	nextvalue1=GetCon.getPrimaryKey();
 	 	ps.setInt(1,nextvalue1);
 	    ps.setString(2,username);
@@ -20,7 +19,7 @@ public static int register(String username,String password,String repassword,dou
 		ps.setString(7,syd);
 			
 		status=ps.executeUpdate();
-		System.out.println(status);
+		
 	} catch (SQLException e) {
 		
 		e.printStackTrace();
